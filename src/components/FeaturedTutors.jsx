@@ -45,7 +45,7 @@ const FeaturedTutors = () => {
       <SectionHeading
         eyebrow="Featured tutors"
         title="Learn from verified tutors"
-        description={loading ? 'Loading approved tutor profiles from Firestore...' : 'These profiles are pulled directly from the users collection.'}
+        description={loading ? 'Loading approved tutor profiles from Firestore...' : ''}
       />
 
       <div className="mt-8 grid gap-6 lg:grid-cols-3">
@@ -53,7 +53,7 @@ const FeaturedTutors = () => {
           tutors.map(tutor => <TutorCard key={tutor.id} tutor={tutor} />)
         ) : (
           <div className="rounded-[28px] border border-dashed border-slate-300 bg-white p-6 text-sm leading-6 text-slate-600 lg:col-span-3">
-            No approved tutors yet. Once an admin approves tutor accounts, they will appear here automatically.
+            No approved tutors yet.
           </div>
         )}
       </div>
@@ -62,4 +62,3 @@ const FeaturedTutors = () => {
 }
 
 export default FeaturedTutors
-
