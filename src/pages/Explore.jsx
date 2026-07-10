@@ -64,9 +64,6 @@ const Explore = () => {
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-sky-600">Explore</p>
           <h1 className="mt-3 text-2xl font-black text-slate-950 md:text-3xl">Discover approved tutors and the topics they teach.</h1>
-          <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
-            Every visible tutor has a status of approved in Firestore. This page is meant for students to browse trusted instructors and move into the tutorials library.
-          </p>
         </div>
 
         <div className="rounded-[30px] border border-slate-200 bg-white p-5 shadow-sm">
@@ -79,12 +76,6 @@ const Explore = () => {
               className="w-full bg-transparent text-sm outline-none placeholder:text-slate-400"
             />
           </label>
-          <div className="mt-4 flex items-start gap-3 rounded-2xl bg-emerald-50 p-4 text-emerald-900">
-            <ShieldCheck size={18} className="mt-0.5 shrink-0" />
-            <p className="text-sm leading-6">
-              Tutor credentials are uploaded to Cloudinary first, then the admin approves the profile in Firestore before tutorials go live.
-            </p>
-          </div>
         </div>
       </section>
 
